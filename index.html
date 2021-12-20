@@ -1,20 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d07c40ca6a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <header class="header">
-        <h1 class="header__heading">HEADER</h1>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img src="images/Toni.svg" alt="" /></a>
+        <span class="icon icon--white nav__toggler fas fa-bars"></span>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="#" onclick="change__component('main')">Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" onclick="change__component('xp')">Experience</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <div class="grid-container">
-        <div class="grid__item1">Main</div>  
-        <div class="grid__item2">Right</div>
-        <div class="grid__item3">Footer</div>
+
+    <div class="main__container component" id="main">
+      <div class="first__inner__container">
+        <div class="inner__container__image">
+          <img src="images/me.png" alt="A picture of me" />
+        </div>
+        <div class="inner__container__content">
+          <h3>Heading3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+            obcaecati libero eveniet, eligendi perspiciatis unde a possimus
+            fugit aut tempora rem magnam quo error, totam quod commodi quidem,
+            ullam qui earum tenetur voluptate sequi sunt amet! Alias, nulla
+            inventore?
+          </p>
+        </div>
+      </div>
+      <div class="second__inner__container">
+        <div class="inner__container__image">
+          <img src="images/me2.png" alt="A picture of me" />
+        </div>
+        <div class="inner__container__content">
+          <h3>Heading3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+            obcaecati libero eveniet, eligendi perspiciatis unde a possimus
+            fugit aut tempora rem magnam quo error, totam quod commodi quidem,
+            ullam qui earum tenetur voluptate sequi sunt amet! Alias, nulla
+            inventore?
+          </p>
+        </div>
+      </div>
     </div>
-</body>
+
+    <div class="experience__container component" id="xp">
+      <div class="experience__content">
+        <h2>Experience</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          quia libero id culpa totam. Doloremque recusandae officia in quo
+          delectus provident nulla molestias non, atque unde nobis excepturi
+          ipsum est similique! Necessitatibus dolore incidunt qui soluta
+          doloremque veritatis ratione ducimus labore consequuntur natus
+          temporibus quas minima sint sit perferendis autem voluptas eius
+          expedita aperiam dolores, velit voluptate dolorum totam placeat!
+          Quidem dolore doloremque harum velit eligendi debitis autem quis,
+          voluptate consequuntur nemo tenetur placeat numquam deleniti provident
+          ab, saepe dicta voluptatum architecto beatae. Amet, quia eos. Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          reprehenderit, veritatis debitis officiis non odio cumque reiciendis
+          in sapiente amet ratione, porro praesentium aspernatur quasi ex iusto
+          fuga blanditiis officia? Non, voluptates itaque eligendi natus et qui
+          blanditiis minima doloremque aut illum deserunt porro in vitae
+          molestias, quisquam velit eum esse aperiam dolores enim tempore sed
+          nobis. Voluptatem commodi ex doloremque dolores iure earum accusamus
+          nulla omnis iste atque a deleniti et possimus itaque tempora
+          consequatur, veniam vel mollitia quam, facere facilis placeat nisi!
+          Officiis perferendis nihil inventore aspernatur alias dolorem tempora
+          dignissimos atque repudiandae? Ipsum assumenda unde voluptate vitae
+          aliquid nulla dolores, qui aliquam ratione? Dolorem, id saepe? Numquam
+          fugit dicta consequatur assumenda quia sapiente animi necessitatibus
+          amet blanditiis? Nisi magni adipisci hic debitis dolores ratione
+          reiciendis officiis quae autem! Eaque tenetur modi eligendi tempore
+          alias, nulla est? Vero modi ut quia consectetur dolorum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse
+          temporibus consequatur aspernatur. Ea rerum, id inventore deserunt
+          laboriosam, ad amet omnis repellendus nemo placeat quae, dicta debitis
+          labore corporis blanditiis quis. Accusantium corrupti assumenda
+          tempore fugit reprehenderit exercitationem. Dolores doloribus culpa
+          repellendus assumenda laboriosam tenetur harum ipsa autem eveniet.
+          Saepe repellendus adipisci ab, accusamus corporis quos soluta ad,
+          aspernatur veritatis, praesentium corrupti omnis dolores explicabo
+          commodi! Cupiditate, earum maiores!
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="logo">
+        <a class="nav__brand" href="/"><img src="images/Toni.svg" alt="" /></a>
+      </div>
+      <div class="ending__words">
+        <p>Thank you for your time.<br />Would love to hear from you.</p>
+      </div>
+      <div class="footer__icons" id="contact">
+        <a href="/" class="fas fa-home fa-2x"></a>
+        <a href="tel:+358458612843" class="fas fa-phone-square-alt fa-2x"></a>
+        <a
+          href="mailto:toni.mertanen@student.lab.fi"
+          class="fas fa-envelope-square fa-2x"
+        ></a>
+        <a
+          href="https://fi.linkedin.com/in/toni-mertanen-655210139"
+          class="fab fa-linkedin fa-2x"
+          target="_blank"
+        ></a>
+        <a
+          href="https://github.com/T-0n-1"
+          class="fab fa-github-square fa-2x"
+          target="_blank"
+        ></a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
