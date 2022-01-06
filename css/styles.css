@@ -1,3 +1,12 @@
+/* FONT-FACES */
+@font-face {
+  font-family: "kaushanscript";
+  src: url("fonts/kaushanscript.woff2") format("woff2"),
+    url("fonts/kaushanscript.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* INITIAL STYLING AND TYPOGRAPHY */
 :root {
   --color-primary: #2584ff;
@@ -27,7 +36,7 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2.4rem;
+  font-size: 4.5rem;
   line-height: 1.5;
   color: var(--color-body);
 }
@@ -36,19 +45,19 @@ h1,
 h2,
 h3 {
   color: var(--color-headings);
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 9.5rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 6.5rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 p {
@@ -130,7 +139,7 @@ a {
 
 .collapsible__heading {
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .collapsible__chevron {
@@ -155,8 +164,8 @@ a {
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 5rem;
+  height: 5rem;
 }
 
 .icon--white {
@@ -204,7 +213,12 @@ a {
 }
 
 .nav__brand {
-  transform: translateY(5px);
+  font-family: "kaushanscript", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ddd;
+  font-size: 5rem;
 }
 
 .nav__brand img {
@@ -220,7 +234,7 @@ a {
   .nav__list {
     width: auto;
     display: flex;
-    font-size: 1.6rem;
+    font-size: 3.5rem;
     max-height: 100%;
     opacity: 1;
   }
@@ -255,19 +269,19 @@ a {
 }
 .first__inner__container img,
 .second__inner__container img {
-  height: 290px;
+  height: 45rem;
   width: auto;
   border-radius: var(--border-radius);
 }
 
 .first__inner__container h2,
 .second__inner__container h2 {
-  margin: 0 3rem 2rem 3rem;
+  margin: 0 5rem 2rem 5rem;
 }
 
 .first__inner__container p,
 .second__inner__container p {
-  margin: 0 3rem 3rem 3rem;
+  margin: 0 5rem 3rem 5rem;
 }
 
 @media screen and (min-width: 740px) {
@@ -303,7 +317,7 @@ a {
   margin: 1.4rem;
   background-image: url("../images/me3.JPG");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top;
   background-attachment: fixed;
   background-size: 100vw;
 }
@@ -338,26 +352,39 @@ a {
 .experience__content {
   width: 100vw;
   margin-top: var(--header-heigth);
-  padding: 0 0 0 3rem;
 }
 
 @media screen and (max-width: 399px) {
   .experience__content p {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .experience__content {
     width: 60vw;
+    margin: 2rem 3rem 3rem 0;
     margin-top: var(--header-heigth);
     padding: 0 3rem;
   }
 }
 
+.experience__content h2 {
+  margin: 2rem 5rem;
+}
+
+.experience__content p {
+  margin: 2rem 5rem 3rem 5rem;
+}
+
+.experience__content p > a {
+  text-decoration: none;
+  color: var(--color-body-darker);
+}
+
 i {
-  font-size: 3rem;
-  margin: 0 0.2rem;
+  font-size: 5rem;
+  margin: 0 0.5rem;
 }
 
 .fa-git-square {
@@ -402,8 +429,8 @@ i {
 .home__assistant {
   display: inline-block;
   background-image: url("../images/homeassistant.svg");
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 0.35rem;
 }
 
@@ -412,8 +439,8 @@ i {
   background-image: url("../images/jquery.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 0.35rem;
 }
 
@@ -422,8 +449,8 @@ i {
   background-image: url("../images/virtual__machine.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 0.35rem;
 }
 
@@ -433,35 +460,26 @@ i {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 0.35rem;
-}
-
-.experience__content h3 {
-  margin: 2rem 3rem;
-}
-
-.experience__content p {
-  margin: 2rem 1rem 3rem 0;
-}
-
-@media screen and (min-width: 1024px) {
-  .experience__content p {
-    margin: 2rem 3rem 3rem 0;
-  }
-}
-
-.experience__content p > a {
-  text-decoration: none;
-  color: var(--color-body-darker);
 }
 
 .fa-level-up-alt {
   position: fixed;
   bottom: 3rem;
   transition: left 0.3s;
-  font-size: 3rem;
+  font-size: 5rem;
+  padding: 2rem 1.5rem 2rem 0.5rem;
+  border-radius: 0.55rem;
+  background-color: #fff;
+}
+
+.fa-level-up-alt:hover,
+:active,
+:visited,
+:link {
+  color: #333;
 }
 
 /* FOOTER SECTION */
@@ -493,7 +511,7 @@ footer {
   flex-direction: column;
   font-style: italic;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3.7rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -509,6 +527,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  flex-shrink: 4;
 }
 
 .fa-home {
@@ -531,13 +550,6 @@ footer {
   padding: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__icons {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-}
-
 .animicon {
   transition: transform 1.8s ease-in-out;
   transition-delay: 1s;
@@ -545,15 +557,4 @@ footer {
 
 .footer__icons > :hover {
   filter: brightness(120%);
-}
-
-.hits {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1.5rem;
-  padding: 1rem;
-  cursor: pointer;
-  color: rgb(99, 94, 92);
 }

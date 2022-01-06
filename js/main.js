@@ -13,16 +13,6 @@ function change__component(component) {
   document.getElementById(component).style.display = "flex";
 }
 
-/* Script for localStorage */
-localStorage.clear(); /* For debugging purposes only - clearing value before production build */
-
-if (localStorage.hits) {
-  localStorage.hits = Number(localStorage.hits) + 1;
-} else {
-  localStorage.hits = 1;
-}
-document.getElementById("hits").innerHTML = localStorage.getItem("hits");
-
 /* Script for animating footer icons after onclick */
 var rotated = false;
 
@@ -62,8 +52,8 @@ window.onscroll = function () {
     document.getElementById("back__up").style.left = "1rem";
     document.getElementById("back__top").style.left = "1rem";
   } else {
-    document.getElementById("back__up").style.left = "-3rem";
-    document.getElementById("back__top").style.left = "-3rem";
+    document.getElementById("back__up").style.left = "-16rem";
+    document.getElementById("back__top").style.left = "-16rem";
   }
   prevScrollpos = currentScrollPos;
 };
