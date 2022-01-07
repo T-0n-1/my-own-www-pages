@@ -486,7 +486,7 @@ i {
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   background-color: #000;
   position: relative;
