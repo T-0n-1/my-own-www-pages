@@ -305,7 +305,7 @@ a {
 /* EXPERIENCE CONTENT */
 @keyframes invisible {
   from {
-    background-image: url("../images/me3.JPG");
+    background-image: url("../images/me3.jpg");
   }
   to {
     background-image: url("../images/white.jpg");
@@ -315,7 +315,7 @@ a {
 .experience__container {
   display: none;
   margin: 1.4rem;
-  background-image: url("../images/me3.JPG");
+  background-image: url("../images/me3.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
@@ -334,7 +334,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .experience__container {
-    background: url("../images/me3.JPG");
+    background: url("../images/me3.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-attachment: fixed;
@@ -469,6 +469,7 @@ i {
   position: fixed;
   bottom: 3rem;
   transition: left 0.3s;
+  color: #333;
   font-size: 5rem;
   padding: 2rem 1.5rem 2rem 0.5rem;
   border-radius: 0.55rem;
