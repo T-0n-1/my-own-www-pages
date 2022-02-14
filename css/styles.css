@@ -431,10 +431,22 @@ i {
 .fa-database {
   color: rgb(46, 98, 241);
 }
+.fa-markdown {
+  color: rgb(195, 46, 241);
+}
 
 .home__assistant {
   display: inline-block;
   background-image: url("../images/homeassistant.svg");
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.35rem;
+}
+
+.cplusplus {
+  display: inline-block;
+  background-image: url("../images/cplusplus.png");
+  background-size: contain;
   width: 5rem;
   height: 5rem;
   border-radius: 0.35rem;
